@@ -1,0 +1,96 @@
+.container {
+    border: 5px solid black;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+    /* usando esta propiedad podemos nombrar las areas
+    y en base a eso asignarlas a los items */
+    grid-template-areas: 
+        "header header header"
+        "side main main"
+        "side main main";
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    /* columna inicio */
+    /* grid-column-start: 1; */
+    /* columna fin */
+    /* grid-column-end: 4; */
+    grid-area: header;
+}
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    /* fila inicio / fila fin */
+    /* grid-row: 2 / 4; */
+    grid-area: side;
+}
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    /* fila inicio / columna inicio / fila fin / columna fin */
+    /* grid-area: 2 / 2 / 4 / 4; */
+    grid-area: main;
+}
+
+
+/* reto */
+.reto {
+    margin-top: 15px;
+    border: 5px solid black;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    place-content: center;
+    /* usando esta propiedad podemos nombrar las areas
+    y en base a eso asignarlas a los items */
+    grid-template-areas: 
+        "one two two"
+        "three three four"
+        "five six seven";
+}
+.item-reto-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #f8bbd0;
+    grid-area: one;
+}
+.item-reto-2 {
+    border: 5px solid #e1bee7;
+    background-color: #e1bee7;
+    grid-area: two;
+}
+.item-reto-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #b2ebf2;
+    grid-area: three;
+}
+.item-reto-4 {
+    border: 5px solid #f8bbd0;
+    background-color: #f8bbd0;
+    grid-area: four; 
+}
+.item-reto-5 {
+    border: 5px solid #f8bbd0;
+    background-color: #f8bbd0; 
+    grid-area: five;
+}
+.item-reto-6 {
+    border: 5px solid #e1bee7;
+    background-color: #e1bee7;
+    grid-area: six;
+    
+}
+.item-reto-7 {
+    border: 5px solid #b2ebf2;
+    background-color: #b2ebf2;
+    grid-area: seven;
+}
